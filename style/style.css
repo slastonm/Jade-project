@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url("../font/GothamRounded-Book.eot");
+  src: url("../font/GothamRounded-Book.eot?#iefix") format('embedded-opentype'), url("../font/GothamRounded-Book.woff") format('woff'), url("../font/GothamRounded-Book.ttf") format('truetype'), url("../font/GothamRounded-Book.svg#GothamRounded-Book") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.clear {
+  zoom: 1;
+}
+.clear:after,
+.clear:before {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+body {
+  background: #fff;
+  font-family: 'GothamRounded-Book';
+  color: #fff;
+  font-size: 20px;
+}
+#main {
+  margin: 0 auto;
+  width: 1260px;
+  height: 854px;
+  background: url("../img/bg.jpg");
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#main header {
+  padding-top: 80px;
+}
+#main header figure {
+  margin: 0;
+  padding: 0;
+}
+#main header ul {
+  margin: 0;
+  padding: 0;
+}
+#main header ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#main header ul li:last-child {
+  padding-left: 0;
+}
+#main header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+#main h3 {
+  margin-top: 220px;
+  font-size: 55px;
+  font-style: italic;
+}

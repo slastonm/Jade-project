@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url('../font/GothamRounded-Book.eot');
+  src: url('../font/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+       url('../font/GothamRounded-Book.woff') format('woff'),
+       url('../font/GothamRounded-Book.ttf') format('truetype'),
+       url('../font/GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+decorateColor1 = #4acaff
+decorateColor2 = #3fb3e3
+decorateColor3 = #79d8ff
+decorateColor4 = #7e9dac
+decorateColor5 = #3baedd
+site-font = 'GothamRounded-Book'
+header-color = #fff
+
+box-sizing(n)
+  -webkit-box-sizing n
+  -moz-box-sizing n
+  box-sizing n
+
+
+.clear
+  zoom 1
+  &:after
+  &:before
+    content ""
+    display table
+  &:after
+    clear both
+
+.wrapper
+  margin 0 auto
+  width 960px
+
+.left
+  float left
+  
+.right
+  float right
+
+
+
+site-font-color = #fff
+font-size = 18px
+body
+  background #fff
+  font-family site-font
+  color site-font-color
+  font-size 20px
+#main
+  margin 0 auto
+  width 1260px
+  height 854px
+  background url('../img/bg.jpg')
+  box-sizing(border-box)
+  header
+    padding-top 80px
+    figure
+      margin 0
+      padding 0
+    ul
+      margin 0
+      padding 0
+      li
+        display inline-block
+        list-style none
+        padding-left 20px
+        padding-top 10px
+        &:last-child
+          padding-left 0
+        a
+          text-decoration none
+          color header-color
+          font-size 14px
+  h3
+    margin-top 220px
+    font-size 55px
+    font-style italic
+    
+

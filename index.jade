@@ -1,0 +1,42 @@
+doctype html
+- var searchText= "I’m looking for.."
+- var menu = ["Home", "About US", "Jobs", "Clients", "Employers", "contact us"]
+mixin menu(item)
+  ul
+    each item in menu
+      li: a(href="/") #{item}   
+
+html
+  head
+    title Jade
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='style/normalize.css')
+    link(rel='stylesheet', href='style/style.css')
+
+  body
+    section#main
+      .wrapper
+        header.clear
+          figure.left: img(src="img/logo.png", alt="logo")
+          nav.right
+            +menu(menu)
+        h3 #{searchText} 
+        div.search
+          form(id="", method="", action="")
+            input(type='text')
+            a(href="/") Search 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
