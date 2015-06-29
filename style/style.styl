@@ -8,6 +8,17 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../font/fontawesome-webfont.eot');
+  src: url('../font/FontAwesome.eot?#iefix') format('embedded-opentype'),
+       url('../font/fontawesome-webfont.woff') format('woff'),
+       url('../font/fontawesome-webfont.ttf') format('truetype'),
+       url('../font/fontawesome-webfont.svg#fontawesome-webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 decorateColor1 = #4acaff
 decorateColor2 = #3fb3e3
 decorateColor3 = #79d8ff
@@ -15,12 +26,32 @@ decorateColor4 = #7e9dac
 decorateColor5 = #3baedd
 site-font = 'GothamRounded-Book'
 header-color = #fff
+about-font-color = #585858
 
 box-sizing(n)
   -webkit-box-sizing n
   -moz-box-sizing n
   box-sizing n
 
+border-radius(r = 2px)
+  -webkit-border-radius r
+  -moz-border-radius r
+  border-radius r
+
+box-shadow()
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  box-shadow arguments
+
+
+transition()
+    -webkit-transition: arguments
+    -ms-transition: arguments
+    -o-transition: arguments
+    -moz-transition: arguments
+    transition: arguments 
+
+// transition(animation)
 
 .clear
   zoom 1
@@ -45,6 +76,13 @@ box-sizing(n)
 
 site-font-color = #fff
 font-size = 18px
+
+animation = background-color 0.5s, color 0.7s, opacity 0.5s
+
+
+
+
+
 body
   background #fff
   font-family site-font
@@ -52,9 +90,11 @@ body
   font-size 20px
 #main
   margin 0 auto
-  width 1260px
-  height 854px
-  background url('../img/bg.jpg')
+  height 654px
+  background-color #e1d4cb
+  background-image url('../img/bg.jpg')
+  background-position center center
+  background-repeat no-repeat
   box-sizing(border-box)
   header
     padding-top 80px
@@ -79,5 +119,144 @@ body
     margin-top 220px
     font-size 55px
     font-style italic
-    
+  
+.search
+  input
+  a
+    display inline-block   
+    border-radius()  
+    font-style italic     
+  input
+    padding 15px 20px  
+    margin-right 80px
+    width 690px
+    background #fff
+    border none
+    box-shadow(0px 4px 0px 0px rgba(226,226,226,1))
+    color #7B7474
+    font-size 18px
+  a
+    padding 15px 20px  
+    background #4acaff
+    color #fff
+    text-decoration none
+    font-weight 700
+    font-size 20px
+    line-height 20px
+    box-shadow(0px 4px 0px 0px rgba(59,174,221,1))
+    i
+      font-size 18px
+      line-height 18px
+.decoration-line
+  width 100%
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth
+    float left
+    width 10%
+    height 1vh
+  .first
+    background decorateColor1
+  .second
+    background decorateColor2
+  .third
+    background decorateColor3
+  .fourth
+    background decorateColor4
+  .fifth
+    background decorateColor5
+.about-block
+  padding 100px 0
+  text-align center
+  h3,
+  h2,
+  p
+    color about-font-color
+  h3
+    margin 0 0 30px 0
+    font-style italic
+    font-weight 300
+    font-size 30px
+    line-height 30px
+  h2
+    margin 0 0 45px 0
+    font-weight 300px
+    font-size 45px
+    line-height 45px
+  .decorate-border
+    margin 0 auto
+    width 140px
+    height 5px
+    background #3baedd
+  p
+    margin 50px 0 70px
+    font-size 18px
+  .read-more
+    display inline-block
+    padding 25px 30px
+    border-radius(8px)
+    font-size 15px
+    text-decoration none
+    text-transform uppercase
+    color #4acaff
+    border 2px solid #4acaff
+    &:hover
+      transition(animation)
+      background #4acaff
+      color #fff
+.subscribe
+  padding 150px 0 170px
+  text-align center
+  background #131c25
+  
+  p
+    margin 0 0 30px 0
+    color #fff
+    font-size 18px
+  .field-wrapper
+    box-sizing(border-box)
+    margin 0 auto
+    width 380px
+    border-radius(8px)
+    border 1px solid #4acaff
+    input
+      display inline-block
+      padding 20px
+      width 300px
+      background transparent
+      border none
+      color #fff
+      font-size 14px
+  .submit
+    color #fff
+    text-decoration none
+    padding 0 10px 0 0
+footer
+  padding 60px 0
+  p
+  a
+  i
+    font-size 14px
+  .fa-envelope-o
+    color #4acaff
+  .mail
+    display inline-block
+    padding-left 13px
+    text-decoration none
+    color #7a7a7a
+    &:hover
+      color darken(#7a7a7a, 50%)
+  p
+    margin 25px 0 0 0
+    color #a6a5a5
+
+
+
+
+      
+  
+
+
 
